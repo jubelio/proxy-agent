@@ -28,7 +28,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SocksProxyAgent = void 0;
 const socks_1 = require("socks");
-const agent_base_1 = require("agent-base");
+const agent_base_1 = require("./agent-base/dist");
 const debug_1 = __importDefault(require("debug"));
 const dns = __importStar(require("dns"));
 const net = __importStar(require("net"));

@@ -107,7 +107,6 @@
     "socks5h"
   ],
   "dependencies": {
-    "agent-base": "github:jubelio/agent-base",
     "debug": "^4.3.4",
     "socks": "^2.7.1"
   },
