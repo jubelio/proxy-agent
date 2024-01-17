@@ -93,7 +93,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jubelio/proxy-agent.git",
-    "directory": "packages/socks-proxy-agent"
+    "directory": "."
   },
   "keywords": [
     "agent",
