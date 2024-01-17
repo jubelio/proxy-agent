@@ -90,7 +90,9 @@ class Agent extends http.Agent {
         return socket;
     }
     get defaultPort() {
-        return (this[INTERNAL] ? this[INTERNAL].defaultPort : (this.protocol === 'https:' ? 443 : 80));
+        return ((this[INTERNAL] && this[INTERNAL].defaultPort)
+            ? this[INTERNAL].defaultPort
+            : (this.protocol === 'https:' ? 443 : 80));
     }
     set defaultPort(v) {
         if (this[INTERNAL]) {
@@ -98,7 +100,9 @@ class Agent extends http.Agent {
         }
     }
     get protocol() {
-        return (this[INTERNAL] ? this[INTERNAL].protocol : (this.isSecureEndpoint() ? 'https:' : 'http:'));
+        return ((this[INTERNAL] && this[INTERNAL].protocol)
+            ? this[INTERNAL].protocol
+            : (this.isSecureEndpoint() ? 'https:' : 'http:'));
     }
     set protocol(v) {
         if (this[INTERNAL]) {
